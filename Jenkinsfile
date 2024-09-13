@@ -27,16 +27,16 @@ pipeline{
         }
 
 
-        stage('setup nginx')
-        {
-            steps{
-                sh '''
-                chmod +x nginx.sh
-                ./nginx.sh
-                '''
-            }
+        // stage('setup nginx')
+        // {
+        //     steps{
+        //         sh '''
+        //         chmod +x nginx.sh
+        //         ./nginx.sh
+        //         '''
+        //     }
         
-        }
+        // }
 
 
     }

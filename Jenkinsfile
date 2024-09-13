@@ -11,8 +11,8 @@ pipeline{
                 sh '''
                 chmod +x envsetup.sh
                 ./envsetup.sh
-                '''
-            }
+                '''        
+             }
         }
 
 

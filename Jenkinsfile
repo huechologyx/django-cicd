@@ -9,9 +9,9 @@ pipeline{
         {
             steps{
                 sh '''
-            chmod +x envsetup.sh
-            ./envsetup.sh
-            '''
+                chmod +x envsetup.sh
+                ./envsetup.sh
+                '''
             }
         }
 

@@ -4,7 +4,7 @@ if [-d "env"]
 then
     echo "Python virtual env exists"
 else
-    py -m venv env
+    python3 -m venv env
 fi
 
 
@@ -16,7 +16,8 @@ pip3 install -r requirements.txt
 
 
 
-if [ -d "logs" ] then
+if [-d "logs"] 
+then
     echo "Logs folder exists"
 else
     mkdir logs

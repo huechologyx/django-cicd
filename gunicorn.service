@@ -4,7 +4,7 @@ Requires=gunicorn.socket
 After=network.target
 
 [Service]
-User=www-data
+User=ubuntu
 Group=www-data
 WorkingDirectory=/var/opt/jenkins/workspace/django-cicd/
 ExecStart=/var/opt/jenkins/workspace/django-cicd/env/bin/gunicorn \

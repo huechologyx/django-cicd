@@ -8,10 +8,10 @@ User=root
 Group=www-data
 WorkingDirectory=/var/opt/jenkins/workspace/django-cicd/
 ExecStart=/var/opt/jenkins/workspace/django-cicd/env/bin/gunicorn \
-          --error-logfile /var/opt/jenkins/workspace/django-cicd/error.log \
-          --workers 3 \
-          --log-level debug \
-          --bind unix:/run/gunicorn.sock \          
+          --error-logfile=/var/opt/jenkins/workspace/django-cicd/error.log \
+          --workers=3 \
+          --log-level=debug \
+          --bind=unix:/run/gunicorn.sock \          
           app.wsgi:application
 
 [Install]

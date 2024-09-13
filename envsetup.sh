@@ -26,7 +26,7 @@ fi
 
 
 sudo chmod -R 777 logs
-echo "envsetup is completed"
+echo "envsetup is completed successfully !!"
 
 
 

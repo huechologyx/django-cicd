@@ -11,8 +11,7 @@ ExecStart=/var/opt/jenkins/workspace/django-cicd/env/bin/gunicorn \
           --error-logfile=/var/opt/jenkins/workspace/django-cicd/error.log \
           --workers=3 \
           --log-level=debug \
-          --bind=unix:/run/gunicorn.sock           
-          app.wsgi:application
+          --bind=unix:/run/gunicorn.sock app.wsgi:application
 
 [Install]
 WantedBy=multi-user.target

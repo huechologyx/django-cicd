@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo cp -rf app.conf /etc/nginx/conf.d
+sudo cp -rf app.conf /etc/nginx/sites-available/app
 
 chmod 710 /var/opt/jenkins/workspace/django-cicd
 

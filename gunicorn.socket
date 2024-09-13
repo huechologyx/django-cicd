@@ -7,9 +7,9 @@ ListenStream=/run/gunicorn.sock
 # inherits the file descriptor by socket activation.
 # Only the nginx daemon will need access to the socket:
 SocketUser=www-data
-SocketGroup=www-data
+#SocketGroup=www-data
 # Once the user/group is correct, restrict the permissions:
-SocketMode=0660
+#SocketMode=600
 
 [Install]
 WantedBy=sockets.target
